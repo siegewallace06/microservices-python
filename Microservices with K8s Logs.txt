@@ -46,3 +46,5 @@ pip install flask flask-mysqldb
 ================
 Auth Manifests
 ================
+To apply everything in Manifests folder
+kubectl apply -f ./
