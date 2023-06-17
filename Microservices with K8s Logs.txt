@@ -1,0 +1,48 @@
+===============
+Introduction
+===============
+Microservices and System Design K8s Kubernetes
+
+https://youtu.be/hmkF77F9TLw
+
+
+===============
+Preparation
+===============
+> Docker Desktop
+> Kubectl
+Ref:
+https://kubernetes.io/docs/tasks/tools/
+
+> Minikube (simulate K8s Cluster)
+Ref:
+https://minikube.sigs.k8s.io/docs/start/
+
+Start Minikube
+minikube start --driver=docker
+
+> K9s
+https://github.com/derailed/k9s
+
+https://k9scli.io/topics/install/
+
+scoop install k9s
+
+> Make Directories:
+python/src/auth
+
+> Make virtualenv
+virtualenv venv --python=python3.10.6
+
+> Packages
+pip install pylint
+pip install jedi
+pip install pyjwt
+pip install flask flask-mysqldb
+
+> Freeze Depedencies
+
+
+================
+Auth Manifests
+================
