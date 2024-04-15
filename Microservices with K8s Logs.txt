@@ -18,6 +18,9 @@ https://kubernetes.io/docs/tasks/tools/
 Ref:
 https://minikube.sigs.k8s.io/docs/start/
 
+Install using package manager:
+winget install minikube
+
 Start Minikube
 minikube start --driver=docker
 
@@ -27,6 +30,9 @@ https://github.com/derailed/k9s
 https://k9scli.io/topics/install/
 
 scoop install k9s
+choco install k9s
+
+> MySQL
 
 > Make Directories:
 python/src/auth
