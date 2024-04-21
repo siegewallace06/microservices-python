@@ -54,3 +54,27 @@ Auth Manifests
 ================
 To apply everything in Manifests folder
 kubectl apply -f ./
+
+
+==============
+Gateway
+==============
+> External access
+Since it is defined in the ingress yaml for accessing the mp3converter service required a host.
+Please put this domain on your host file.
+# Added for Microservice Learning
+127.0.0.1 mp3converter.com
+
+> Install Minikube Addons
+To support ingress, we need to install Addons. You can first list by running:
+minikube addons list
+Then install:
+minikube addons enable ingress
+
+> Enable Ingress
+To enable ingress, we need to run the following command:
+minikube tunnel
+
+> Note for RabbidMQ
+In case the RabbidMQ is not yet ready, we can scale down the deployment first
+kubectl scale deployment --replicas=0 gateway
